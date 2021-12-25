@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHAZAAO.COM</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Sign up;
+		--web-view-id: Sign_up;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Sign_up;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Sign_up {
+		position: absolute;
+		width: 1800px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Sign up;
+		--web-view-id: Sign_up;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Rectangle_1_c {
+		fill: rgba(214,165,150,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1_c {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 201px;
+		left: 0px;
+		top: 0px;
+	}
+	#About_c {
+		left: 1392px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 124px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: About_contact.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(9,9,9,1);
+	}
+	#Contact_c {
+		left: 1583px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 155px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: About_contact.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(6,6,6,1);
+	}
+	#logo{
+		position: absolute;
+		width: 291px;
+		height: 189px;
+		left: 51px;
+		top: 0px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: User_login.html;
+		cursor: pointer;
+	}
+	#Rectangle_10_c {
+		fill: rgba(4,4,4,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_10_c {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 139px;
+		left: 0px;
+		top: 941px;
+	}
+	#footer{
+		left: 1056px;
+		top: 981px;
+		position: absolute;
+		overflow: visible;
+		width: 732px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(242,242,242,1);
+	}
+	#Rectangle_20 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_20 {
+		position: absolute;
+		overflow: visible;
+		width: 613px;
+		height: 91px;
+		left: 759px;
+		top: 295px;
+	}
+	#Rectangle_21 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_21 {
+		position: absolute;
+		overflow: visible;
+		width: 613px;
+		height: 91px;
+		left: 759px;
+		top: 386px;
+	}
+
+	#Name {
+		left: 412px;
+		top: 300px;
+		position: absolute;
+		overflow: visible;
+		width: 130px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(9,9,9,1);
+	}
+	#Phone_Number {
+		left: 412px;
+		top: 391px;
+		position: absolute;
+		overflow: visible;
+		width: 313px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(9,9,9,1);
+	}
+	#Address {
+		left: 412px;
+		top: 638px;
+		position: absolute;
+		overflow: visible;
+		width: 170px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(9,9,9,1);
+	}
+	#Rectangle_23 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_23 {
+		position: absolute;
+		overflow: visible;
+		width: 613px;
+		height: 91px;
+		left: 759px;
+		top: 510px;
+	}
+	#Rectangle_24 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_24 {
+		position: absolute;
+		overflow: visible;
+		width: 613px;
+		height: 91px;
+		left: 759px;
+		top: 634px;
+	}
+	#Email_dj {
+		left: 412px;
+		top: 515px;
+		position: absolute;
+		overflow: visible;
+		width: 117px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(9,9,9,1);
+	}
+	#Rectangle_25 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_25 {
+		position: absolute;
+		overflow: visible;
+		width: 318px;
+		height: 105px;
+		left: 816px;
+		top: 786px;
+        border: 3px solid black;
+	}
+	#Sign_Up_ {
+		left: 898px;
+		top: 805px;
+		position: absolute;
+		overflow: visible;
+		width: 170px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(9,9,9,1);
+	}
+	.login-button{
+        text-decoration: none;
+        color: black;
+    }
+	.input{
+        width: 600px;
+        height: 60px;
+        background-color: white;
+        border: 3px solid black;
+    }
+</style>
+</head>
+<body>
+<div id="Sign_up">
+	<svg class="Rectangle_1_c">
+		<rect id="Rectangle_1_c" rx="0" ry="0" x="0" y="0" width="1800" height="201">
+		</rect>
+	</svg>
+	<div onclick="application.goToTargetView(event)" id="About_c">
+		<span>About</span>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Contact_c">
+		<span>Contact</span>
+	</div>
+	<a href="User login.html"><img id="logo" src="image/logo.png" alt=""></a>	
+		
+	<svg class="Rectangle_10_c">
+		<rect id="Rectangle_10_c" rx="0" ry="0" x="0" y="0" width="1920" height="139">
+		</rect>
+	</svg>
+	<div id="footer">
+		<span>@2021 All copyright SHAZAAO.COM</span>
+	</div>
+	<div class="Rectangle_20">
+		<input class="input" type="text">
+	</div>
+	<div class="Rectangle_21">
+		<input class="input" type="tel">
+	</div>
+	<div id="Name">
+		<span>Name:</span>
+	</div>
+	<div id="Phone_Number">
+		<span>Phone Number:</span>
+	</div>
+	<div id="Address">
+		<span>Address:</span>
+	</div>
+	<div class="Rectangle_23">
+		<input class="input" type="email">
+	</div>
+	<div class="Rectangle_24">
+		<input class="input" type="text">
+	</div>
+	<div id="Email_dj">
+		<span>Email:</span>
+	</div>
+	<svg class="Rectangle_25">
+		<rect onclick="application.goToTargetView(event)" id="Rectangle_25" rx="0" ry="0" x="0" y="0" width="312" height="99">
+		</rect>
+	</svg>
+	<div id="Sign_Up_">
+		<a class="login-button" href="User login.html">Sign Up</a>
+	</div>
+</div>
+</body>
+</html>

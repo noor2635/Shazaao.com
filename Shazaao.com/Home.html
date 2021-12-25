@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHAZAAO.COM</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Home;
+		--web-view-id: Home;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Home;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Home {
+		position: absolute;
+		width: 1800px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Home;
+		--web-view-id: Home;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Rectangle_1 {
+		fill: rgba(214,165,150,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 1800px;
+		height: 201px;
+		left: 0px;
+		top: 0px;
+	}
+	#About {
+		left: 1392px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 124px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: About_contact.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(7,7,7,1);
+	}
+	#Contact {
+		left: 1583px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 155px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: About_contact.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(3,3,3,1);
+	}
+	#logo {
+		position: absolute;
+		width: 291px;
+		height: 189px;
+		left: 51px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_2 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 568px;
+		height: 162px;
+		left: 656px;
+		top: 398px;
+	}
+	#Rectangle_3 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 568px;
+		height: 162px;
+		left: 656px;
+		top: 560px;
+	}
+	#ADMIN {
+		left: 832px;
+		top: 419px;
+		position: absolute;
+		overflow: visible;
+		width: 226px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Admin_login.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 69px;
+		color: rgba(9,8,8,1);
+	}
+	#USER {
+		left: 860px;
+		top: 596px;
+		position: absolute;
+		overflow: visible;
+		width: 161px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: User_login.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 69px;
+		color: rgba(9,9,9,1);
+	}
+	#Admin_or_user_Click_to_log_In {
+		left: 651px;
+		top: 286px;
+		position: absolute;
+		overflow: visible;
+		width: 587px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(7,7,7,1);
+	}
+	#Rectangle_10 {
+		fill: rgba(4,4,4,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_10 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 139px;
+		left: 0px;
+		top: 941px;
+	}
+	#footer {
+		left: 1056px;
+		top: 981px;
+		position: absolute;
+		overflow: visible;
+		width: 732px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(242,242,242,1);
+	}
+
+	.header-btn{
+		text-decoration: none;
+		color: black;
+	}
+</style>
+
+</head>
+<body>
+<div id="Home">
+	<svg class="Rectangle_1">
+		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1800" height="201">
+		</rect>
+	</svg>
+	<div onclick="application.goToTargetView(event)" id="About">
+		<a class="header-btn" href="About & Contact.html">About</a>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Contact">
+		<a class="header-btn" href="About & Contact.html">Contact</a>
+	</div>
+	<a href="Home.html"><img id="logo" src="image/logo.png" alt=""></a>	
+		
+	<svg class="Rectangle_2">
+		<rect id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="568" height="162">
+		</rect>
+	</svg>
+	<svg class="Rectangle_3">
+		<rect id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="568" height="162">
+		</rect>
+	</svg>
+	<div onclick="application.goToTargetView(event)" id="ADMIN">
+		<a class="header-btn" href="Admin login.html">ADMIN</a>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="USER">
+		<a class="header-btn" href="User login.html">USER</a>
+	</div>
+	<div id="Admin_or_user_Click_to_log_In">
+		<span>Admin or user? Click to log In</span>
+	</div>
+	<svg class="Rectangle_10">
+		<rect id="Rectangle_10" rx="0" ry="0" x="0" y="0" width="1800" height="139">
+		</rect>
+	</svg>
+	<div id="footer">
+		<span>@2021 All copyright SHAZAAO.COM</span>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHAZAAO.COM</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Manage stock;
+		--web-view-id: Manage_stock;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Manage_stock;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Manage_stock {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Manage stock;
+		--web-view-id: Manage_stock;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Rectangle_1_dc {
+		fill: rgba(214,165,150,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1_dc {
+		position: absolute;
+		overflow: visible;
+		width: 1800px;
+		height: 201px;
+		left: 0px;
+		top: 0px;
+	}
+	#About_dd {
+		left: 1392px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 124px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: About_contact.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(9,9,9,1);
+	}
+	#Contact_de {
+		left: 1583px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 155px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: About_contact.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(6,6,6,1);
+	}
+	#logo {
+		position: absolute;
+		width: 291px;
+		height: 189px;
+		left: 51px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_10_dg {
+		fill: rgba(4,4,4,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_10_dg {
+		position: absolute;
+		overflow: visible;
+		width: 1800px;
+		height: 139px;
+		left: 0px;
+		top: 941px;
+	}
+	#footer {
+		left: 1056px;
+		top: 981px;
+		position: absolute;
+		overflow: visible;
+		width: 732px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(242,242,242,1);
+	}
+	#Table {
+		left: 540px;
+		top: 294px;
+		position: absolute;
+		overflow: visible;
+		width: 842px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 370px;
+		color: rgba(6,6,6,1);
+	}
+
+	.header-btn{
+		text-decoration: none;
+		color: black;
+	}
+
+
+	table, th, td {
+		border:1px solid black;
+		
+		
+	  }
+	  .th1{
+		  background-color: black;
+		  color: aliceblue;
+		  width: 250px;
+		  height: 60px;
+	  }
+	  .td1{
+		 height: 50px;
+		  background-color: lightgray;
+  
+	  }
+	 
+  
+	  
+	  .table1{
+		  top: 120px;
+		  padding: 250px;
+		  padding-left: 280px;
+	  
+	  }
+
+	  .action{
+		  padding-left: 10px;
+		  display: flex;
+
+        display: flex;
+		flex-flow: wrap row;
+        justify-content: center;
+        align-items: center;
+	  }
+	  .td-add{
+		  background-color: green;
+		  border-radius: 7px;
+		  cursor: pointer;
+		  height: 37px;
+		  width: 70px;
+		  font-size: 1rem;
+	  }
+
+	  .action > div {
+		  padding-left: 20px;
+
+	  }
+	  .td-remove{
+		  background-color: rgb(129, 4, 4);
+		  border-radius: 7px;
+		  cursor: pointer;
+		  height: 37px;
+		  width: 70px;
+		  font-size: 1rem;
+	  }
+</style>
+
+</head>
+<body>
+<div id="Manage_stock">
+	<svg class="Rectangle_1_dc">
+		<rect id="Rectangle_1_dc" rx="0" ry="0" x="0" y="0" width="1800" height="201">
+		</rect>
+	</svg>
+	<div onclick="application.goToTargetView(event)" id="About_dd">
+		<a class="header-btn" href="About & Contact.html">About</a>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Contact_de">
+		<a class="header-btn" href="About & Contact.html">Contact</a>
+	</div>
+	<a href="Admin view stock.html"><img id="logo" src="image/logo.png" alt=""></a>	
+		
+	<svg class="Rectangle_10_dg">
+		<rect id="Rectangle_10_dg" rx="0" ry="0" x="0" y="0" width="1800" height="139">
+		</rect>
+	</svg>
+	<div id="footer">
+		<span>@2021 All copyright SHAZAAO.COM</span>
+	</div>
+	<div id="table1">
+		<span>Table</span>
+
+
+		<div class="table1">
+            <table style="width:100%  "  >
+                <tr>
+                  <th class="th1" ><h3>Product ID</h3></th>
+                  <th  class="th1" ><h3>Price</h3></th>
+                  <th class="th1" ><h3>Quantity</h3></th>
+                  
+                  <th class="th1" ><h3>Action</h3></th>
+                </tr>
+                <tr>
+                  <td class="td1" ></td>
+                  <td class="td1" ></td>
+                  <td class="td1"></td>
+                  <td class="td1" >
+					<div class="action">
+					  <div><button class="td-add">ADD</button></div>
+					  <div><button class="td-remove">REMOVE</button></div>
+					</div>
+				  </td>
+                 
+                  
+                </tr>
+                
+                
+            </table>
+
+
+
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHAZAAO.COM</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: payment;
+		--web-view-id: payment;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: payment;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#payment {
+		position: absolute;
+		width: 1800px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: payment;
+		--web-view-id: payment;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Rectangle_1_b {
+		fill: rgba(214,165,150,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1_b {
+		position: absolute;
+		overflow: visible;
+		width: 1800px;
+		height: 201px;
+		left: 0px;
+		top: 0px;
+	}
+	#About_b {
+		left: 1392px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 124px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: About_contact.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(9,9,9,1);
+	}
+	#Contact_b {
+		left: 1583px;
+		top: 35px;
+		position: absolute;
+		overflow: visible;
+		width: 155px;
+		white-space: nowrap;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: About_contact.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(6,6,6,1);
+	}
+	#logo {
+		position: absolute;
+		width: 291px;
+		height: 189px;
+		left: 51px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_10_b {
+		fill: rgba(4,4,4,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_10_b {
+		position: absolute;
+		overflow: visible;
+		width: 1800px;
+		height: 139px;
+		left: 0px;
+		top: 941px;
+	}
+	#footer {
+		left: 1056px;
+		top: 981px;
+		position: absolute;
+		overflow: visible;
+		width: 732px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 45px;
+		color: rgba(242,242,242,1);
+	}
+	#Rectangle_17 {
+		fill: rgba(225,221,202,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_17 {
+		position: absolute;
+		overflow: visible;
+		width: 665px;
+		height: 232px;
+		left: 609px;
+		top: 491px;
+	}
+	#Rectangle_16 {
+		fill: rgba(225,221,202,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_16 {
+		position: absolute;
+		overflow: visible;
+		width: 665px;
+		height: 220px;
+		left: 609px;
+		top: 236px;
+	}
+	#Preferred_Time_for_Delivery {
+		left: 652px;
+		top: 236px;
+		position: absolute;
+		overflow: visible;
+		width: 581px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 49px;
+		color: rgba(6,6,6,1);
+	}
+	#n_0_am_-_1_pm {
+		left: 697px;
+		top: 312px;
+		position: absolute;
+		overflow: visible;
+		width: 262px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 44px;
+		color: rgba(6,6,6,1);
+	}
+	#n__pm_-_8pm {
+		left: 723px;
+		top: 381px;
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 44px;
+		color: rgba(6,6,6,1);
+	}
+	#Payment_Method {
+		left: 644px;
+		top: 505px;
+		position: absolute;
+		overflow: visible;
+		width: 403px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 53px;
+		color: rgba(6,6,6,1);
+	}
+	#Cash_on_Delivery {
+		left: 722px;
+		top: 610px;
+		position: absolute;
+		overflow: visible;
+		width: 325px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 44px;
+		color: rgba(6,6,6,1);
+	}
+	#Rectangle_18 {
+		fill: rgba(216,126,108,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_18 {
+		position: absolute;
+		overflow: visible;
+		width: 262px;
+		height: 86px;
+		left: 811px;
+		top: 777px;
+	}
+	#Place_Order {
+		left: 829px;
+		top: 785px;
+		position: absolute;
+		overflow: visible;
+		width: 227px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 44px;
+		color: rgba(6,6,6,1);
+	}
+	.header-btn{
+		text-decoration: none;
+		color: black;
+	}
+</style>
+
+</head>
+<body>
+<div id="payment">
+	<svg class="Rectangle_1_b">
+		<rect id="Rectangle_1_b" rx="0" ry="0" x="0" y="0" width="1800" height="201">
+		</rect>
+	</svg>
+	<div onclick="application.goToTargetView(event)" id="About_b">
+		<a class="header-btn" href="About & Contact.html">About</a>
+	</div>
+	<div onclick="application.goToTargetView(event)" id="Contact_b">
+		<a class="header-btn" href="About & Contact.html">Contact</a>
+	</div>
+	<a href="Home.html"><img id="logo" src="image/logo.png" alt=""></a>	
+		
+	<svg class="Rectangle_10_b">
+		<rect id="Rectangle_10_b" rx="0" ry="0" x="0" y="0" width="1800" height="139">
+		</rect>
+	</svg>
+	<div id="footer">
+		<span>@2021 All copyright SHAZAAO.COM</span>
+	</div>
+	<svg class="Rectangle_17">
+		<rect id="Rectangle_17" rx="0" ry="0" x="0" y="0" width="665" height="232">
+		</rect>
+	</svg>
+	<svg class="Rectangle_16">
+		<rect id="Rectangle_16" rx="0" ry="0" x="0" y="0" width="665" height="220">
+		</rect>
+	</svg>
+	<div id="Preferred_Time_for_Delivery">
+		<span>Preferred Time for Delivery</span>
+	</div>
+	<div id="n_0_am_-_1_pm">
+		  <input type="radio"name="fav_language" value="10 am - 1 pm">
+          <label for="html">10 am - 1 pm</label>
+	</div>
+	<div id="n__pm_-_8pm">
+		<input type="radio"name="fav_language" value="4 pm - 8pm">
+        <label for="html">4 pm - 8pm</label>
+	</div>
+	<div id="Payment_Method">
+		<span>Payment Method</span>
+	</div>
+	<div id="Cash_on_Delivery">
+		<input type="radio" value="Cash on Delivery">
+        <label for="html">Cash on Delivery</label>
+	</div>
+	<svg class="Rectangle_18">
+		<rect id="Rectangle_18" rx="0" ry="0" x="0" y="0" width="262" height="86">
+		</rect>
+	</svg>
+	<div id="Place_Order">
+		<a class="header-btn" href="Order succesfull.html">Place Order</a>
+	</div>
+</div>
+</body>
+</html>
